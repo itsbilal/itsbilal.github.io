@@ -5,6 +5,45 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="main.css" />
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript" src="jquery.js"></script>
+
+        <script type="text/javascript">
+            // document.onLoad
+            $(function(){
+                    // Check doc fragment
+                    if (window.location.hash) {
+                        var hash = window.location.hash.substring(1);
+                        loadpage(hash);
+                        } else {
+                        loadpage("home");
+                        }
+
+                        $(".bottom-nav-links").click(function() {
+                        
+                        // Clear all classes first
+                        $(".bottom-nav-links").removeClass("bottom-nav-links-current");
+                        $(this).addClass("bottom-nav-links-current");
+                        })
+
+                    });
+            
+            function loadpage(hash_fragment) {
+                var content_filename = "";
+                switch(hash_fragment.toUpperCase()) {
+                case "MYWORK":
+                content_filename = "mywork.html";
+                break;
+
+                case "CONTACT":
+                content_filename = "contact.html";
+                break;
+
+                default:
+                content_filename = "home.html";
+                }
+                };
+        </script>
     </head>
     <body>
         <div id="main">
@@ -14,14 +53,17 @@
             </div>
             <br>
             <hr>
+            <section id="main_content">
+                Lorem ipsum placeholder
+            </section>
         </div>
 
         <nav>
 
-            <a href="#" class="bottom-nav-links">Home</a>
-            <a href="#" class="bottom-nav-links">My work</a>
-            <a href="#" class="bottom-nav-links">Blog</a>
-            <a href="#" class="bottom-nav-links">Contact me</a>
+            <a href="#" onclick='loadpage("home")' class="bottom-nav-links">Home</a>
+            <a href="#mywork" onclick='loadpage("mywork")' class="bottom-nav-links">My work</a>
+            <a href="http://blog.itsbilal.com/" class="bottom-nav-links">Blog</a>
+            <a href="#contact" onclick='loadpage("contact")' class="bottom-nav-links">Contact me</a>
 
         </nav>
     </body>
