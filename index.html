@@ -19,29 +19,25 @@
                         loadpage("home");
                         }
 
-                        $(".bottom-nav-links").click(function() {
-                        
-                        // Clear all classes first
-                        $(".bottom-nav-links").removeClass("bottom-nav-links-current");
-                        $(this).addClass("bottom-nav-links-current");
-                        })
-
                     });
             
             function loadpage(hash_fragment) {
-                var content_filename = "";
-                switch(hash_fragment.toUpperCase()) {
-                case "MYWORK":
-                content_filename = "mywork.html";
-                break;
+                hash_fragment = hash_fragment.toLowerCase();
+                $(".bottom-nav-links").removeClass("bottom-nav-links-current");
 
-                case "CONTACT":
-                content_filename = "contact.html";
-                break;
-
-                default:
-                content_filename = "home.html";
+                if (hash_fragment != "mywork" && hash_fragment != "contact" && hash_fragment != "blog")
+                    hash_fragment = "home"
+                else if (hash_fragment == "blog") {
+                    $(".bottom-nav-links").removeClass("bottom-nav-links-current");
+                    $("#blog_navlink").addClass("bottom-nav-links-current");
+                    return;
                 }
+                $("#"+hash_fragment+"_navlink").addClass("bottom-nav-links-current");
+
+                var content_filename = hash_fragment + ".html";
+                // Load main_content section with html from filename
+                // TODO: Animate this part
+                $.get(content_filename,function(data){ $("#main_content").html(data); });
                 };
         </script>
     </head>
@@ -60,10 +56,10 @@
 
         <nav>
 
-            <a href="#" onclick='loadpage("home")' class="bottom-nav-links">Home</a>
-            <a href="#mywork" onclick='loadpage("mywork")' class="bottom-nav-links">My work</a>
-            <a href="http://blog.itsbilal.com/" class="bottom-nav-links">Blog</a>
-            <a href="#contact" onclick='loadpage("contact")' class="bottom-nav-links">Contact me</a>
+            <a href="#" id="home_navlink" onclick='loadpage("home")' class="bottom-nav-links">Home</a>
+            <a href="#mywork" id="mywork_navlink" onclick='loadpage("mywork")' class="bottom-nav-links">My work</a>
+            <a href="http://blog.itsbilal.com/" id="blog_navlink" onclick='loadpage("blog")' class="bottom-nav-links">Blog</a>
+            <a href="#contact" id="contact_navlink" onclick='loadpage("contact")' class="bottom-nav-links">Contact me</a>
 
         </nav>
     </body>
