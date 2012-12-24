@@ -19,6 +19,10 @@
                         loadpage("home");
                         }
 
+                        $(".bottom-nav-links").click(function(){
+                            var link_id = $(this).attr("id");
+                            loadpage(link_id.substr(0,link_id.lastIndexOf("_")));
+                            });
                     });
             
             function loadpage(hash_fragment) {
@@ -28,7 +32,6 @@
                 if (hash_fragment != "mywork" && hash_fragment != "contact" && hash_fragment != "blog")
                     hash_fragment = "home"
                 else if (hash_fragment == "blog") {
-                    $(".bottom-nav-links").removeClass("bottom-nav-links-current");
                     $("#blog_navlink").addClass("bottom-nav-links-current");
                     return;
                 }
@@ -37,7 +40,15 @@
                 var content_filename = hash_fragment + ".html";
                 // Load main_content section with html from filename
                 // TODO: Animate this part
-                $.get(content_filename,function(data){ $("#main_content").html(data); });
+                $("#main_content").fadeOut('slow', function(){
+                    // Display spinner
+                    $("#spinner-div").show();
+                    $.get(content_filename,function(data){
+                            $("#main_content").html(data);
+                        });
+                    $("#spinner-div").hide();
+                    $("#main_content").fadeIn('slow');
+                    });
                 };
         </script>
     </head>
@@ -52,14 +63,17 @@
             <section id="main_content">
                 Lorem ipsum placeholder
             </section>
+            <div id="spinner-div">
+                <img src="ajax-loader.gif" alt="Spinner" title="Loading..." />
+            </div>
         </div>
 
         <nav>
 
-            <a href="#" id="home_navlink" onclick='loadpage("home")' class="bottom-nav-links">Home</a>
-            <a href="#mywork" id="mywork_navlink" onclick='loadpage("mywork")' class="bottom-nav-links">My work</a>
-            <a href="http://blog.itsbilal.com/" id="blog_navlink" onclick='loadpage("blog")' class="bottom-nav-links">Blog</a>
-            <a href="#contact" id="contact_navlink" onclick='loadpage("contact")' class="bottom-nav-links">Contact me</a>
+            <a href="#" id="home_navlink" class="bottom-nav-links">Home</a>
+            <a href="#mywork" id="mywork_navlink" class="bottom-nav-links">My work</a>
+            <a href="http://blog.itsbilal.com/" id="blog_navlink" class="bottom-nav-links">Blog</a>
+            <a href="#contact" id="contact_navlink" class="bottom-nav-links">Contact me</a>
 
         </nav>
     </body>
