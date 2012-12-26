@@ -3,14 +3,16 @@ body {
     font-family: Ubuntu, sans-serif;
     color: #969696;
 
-    /*background-image: url("background.jpg");*/
+    background-image: url("background.png");
+    background-size: 100%;
 }
 
 #main {
     margin:10% auto;
     width:40%;
     padding: 20px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(135,135,135,0.5);
+    color: white;
 
     /* Border */
     border-style: solid;
@@ -22,7 +24,7 @@ body {
 }
 
 section {
-    color: #464646;
+    color: white;
     padding: 15px 0px;
 }
 
@@ -48,7 +50,7 @@ nav {
     padding: 5px;
     width:200px;
     background-color: transparent;
-    background: -webkit-linear-gradient(top, rgba(186,186,186,0.3), rgba(186,186,186,0,8));
+    background: -webkit-linear-gradient(top, rgba(232,232,232,0.8), rgba(186,186,186,0.8));
 
     border: 1px solid #464646;
     border-radius: 15px;
@@ -63,11 +65,11 @@ nav {
 .bottom-nav-links:hover {
     color:black;
     background-color: rgb(61,61,61);
-    background: -webkit-linear-gradient(bottom, rgba(186,186,186,0.1), rgba(186,186,186,0.8));
+    background: -webkit-linear-gradient(bottom, rgba(232,232,232,0.8), rgba(186,186,186,0.8));
 }
 
 .bottom-nav-links:active, .bottom-nav-links-current:link, .bottom-nav-links-current:hover, .bottom-nav-links-current:active, .bottom-nav-links-current:visited {
-    color: white;
+    color: black;
     background-color: rgba(130,130,130,0.5);
     box-shadow: inset 0px 0px 7px #3D3D3D;
 
