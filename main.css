@@ -3,8 +3,6 @@ body {
     font-family: Ubuntu, sans-serif;
     color: #969696;
 
-    background-image: url("background.png");
-    background-size: 100%;
 }
 
 #main {
@@ -24,7 +22,7 @@ body {
 }
 
 section {
-    color: white;
+    color: #464646;
     padding: 15px 0px;
 }
 
@@ -40,8 +38,8 @@ nav {
     width: 100%;
     text-align:center;
 
-    background: -webkit-linear-gradient(top, transparent, rgba(186,186,186,0.8));
-    background: linear-gradient(to bottom, transparent, rgba(186,186,186,0.8));
+    background: -webkit-linear-gradient(top, white, #B9B9B9));
+    /*background: linear-gradient(to bottom, transparent, rgba(186,186,186,0.8));*/
 }
 
 .bottom-nav-links:link, .bottom-nav-links:visited {
