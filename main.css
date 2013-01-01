@@ -3,34 +3,34 @@ body {
     font-family: Ubuntu, sans-serif;
     color: #606060;
 
+    background-image: url('background.png');
+    background-size:100%
 }
 
 #main {
     margin:5% auto 10% auto;
     width:50%;
-    padding: 20px;
-    background-color: white;
+    /*padding: 20px;*/
+    background-color: #F0F0F0;
     color: #969696;
 
     /* Border */
     /*border-style: solid;
     border-width:1px;
-    border-color:#A1A1A1;
-    border-radius:15px;
-    -moz-border-radius:15px;
-    box-shadow: 0px 0px 10px #CCCCCC;*/
+    border-color:#4f4f4f;*/
+    box-shadow: 0px 0px 15px #4f4f4f;
 }
 
 section {
     color: #606060;
     padding: 15px;
 
-    border-style: solid;
+    /*border-style: solid;
     border-width:1px;
     border-color:#A1A1A1;
     border-radius:15px;
     -moz-border-radius:15px;
-    box-shadow: 0px 0px 10px #CCCCCC;
+    box-shadow: 0px 0px 10px #CCCCCC;*/
 
 }
 
@@ -40,21 +40,23 @@ section {
 }
 
 nav {
-    position: absolute;
-    bottom: 0;
     height: 100px;
     width: 100%;
     text-align:center;
+    border-bottom-style: solid;
+    border-top-style:solid;
+    border-width:1px;
+    border-color:black;
 
-    background: -webkit-linear-gradient(top, white, #B9B9B9);
-    background: linear-gradient(to bottom, white, #B9B9B9);
+    background: -webkit-linear-gradient(top, #D1D1D1, #B0B0B0 40%, #B0B0B0 60%, #D1D1D1);
+    background: linear-gradient(to bottom, #f0f0f0, #B9B9B9);
 }
 
 .bottom-nav-links:link, .bottom-nav-links:visited {
     display: inline-block;
-    margin: 40px 30px;
+    margin: 34px 30px;
     padding: 5px;
-    width:200px;
+    width:150px;
     background-color: transparent;
     background: -webkit-linear-gradient(top, rgb(232,232,232), rgb(186,186,186));
 
@@ -86,25 +88,27 @@ nav {
     color: #DEDEDE;
     font-size:60px;
     /*height:100px;*/
-    padding: 10px 0px;
+    padding: 20px;
 
     vertical-align:text-middle;
 }
 
 #firstname {
     font-weight: 700;
-    color: #969696;
+    color: #28B9F7;
 }
 
 #lastname {
     font-weight: 400;
-    color: #969696;
+    color: #28B9F7;
 }
 
 #slogan {
     font-size: 26px;
     font-weight: 400;
-    padding: 20px 0px 30px 0px;
+    padding: 0px 20px 10px;
+    
+    color: #00B3FF;
 }
 
 #gravatar {
