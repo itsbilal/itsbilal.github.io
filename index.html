@@ -14,18 +14,23 @@
                     // Check doc fragment
                     if (window.location.hash) {
                         var hash = window.location.hash.substring(1);
-                        loadpage(hash);
+                        loadpage(hash,false);
                         } else {
-                        loadpage("home");
+                        loadpage("home",false);
                         }
 
                         $(".bottom-nav-links").click(function(){
                             var link_id = $(this).attr("id");
-                            loadpage(link_id.substr(0,link_id.lastIndexOf("_")));
+                            
+                            $("#main_content").animate({"margin-left": -$("#main_content").outerWidth()},
+                                                        500, function(){
+                                    $("#main_content").css({"margin-left": "80%"})
+                                    loadpage(link_id.substr(0,link_id.lastIndexOf("_")), true);
+                                });
                             });
                     });
             
-            function loadpage(hash_fragment) {
+            function loadpage(hash_fragment, bringdivback) {
                 hash_fragment = hash_fragment.toLowerCase();
                 $(".bottom-nav-links").removeClass("bottom-nav-links-current");
 
@@ -40,15 +45,17 @@
                 var content_filename = hash_fragment + ".html";
                 // Load main_content section with html from filename
                 // TODO: Animate this part
-                $("#main_content").fadeOut('slow', function(){
-                    // Display spinner
-                    $("#spinner-div").show();
-                    $.get(content_filename,function(data){
-                            $("#main_content").html(data);
-                        });
-                    $("#spinner-div").hide();
-                    $("#main_content").fadeIn('slow');
+                // $("#main_content").fadeOut('slow');
+
+                // Display spinner
+                $("#spinner-div").show();
+                $.get(content_filename,function(data){
+                        $("#main_content").html(data);
+                        $("#spinner-div").hide();
+                        if (bringdivback)
+                            $("#main_content").animate({"margin-left" : 0}, 500);
                     });
+                
                 };
         </script>
     </head>
@@ -70,7 +77,7 @@
 
             </nav>
             <section id="main_content">
-                
+               Lorem ipsum 
             </section>
             <div id="spinner-div">
                 <img src="ajax-loader.gif" alt="Spinner" title="Loading..." />

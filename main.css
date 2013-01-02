@@ -13,6 +13,7 @@ body {
     /*padding: 20px;*/
     background-color: #F0F0F0;
     color: #969696;
+    overflow:hidden;
 
     /* Border */
     /*border-style: solid;
@@ -23,7 +24,7 @@ body {
 
 section {
     color: #606060;
-    padding: 15px;
+    padding: 20px;
 
     /*border-style: solid;
     border-width:1px;
@@ -31,6 +32,8 @@ section {
     border-radius:15px;
     -moz-border-radius:15px;
     box-shadow: 0px 0px 10px #CCCCCC;*/
+
+    overflow: hidden;
 
 }
 
