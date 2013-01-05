@@ -25,7 +25,7 @@ body {
 section {
     color: #606060;
     padding: 20px;
-    width: 945px;
+    width: 905px;
 
     /*border-style: solid;
     border-width:1px;
@@ -90,7 +90,7 @@ nav {
 }
 
 #name {
-    color: #DEDEDE;
+    color: #9617EB;
     font-size:60px;
     /*height:100px;*/
     padding: 20px;
@@ -100,12 +100,10 @@ nav {
 
 #firstname {
     font-weight: 700;
-    color: #28B9F7;
 }
 
 #lastname {
     font-weight: 400;
-    color: #28B9F7;
 }
 
 #slogan {
