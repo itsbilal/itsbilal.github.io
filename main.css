@@ -9,7 +9,7 @@ body {
 
 #main {
     margin:5% auto 10% auto;
-    width:50%;
+    width:945px;
     /*padding: 20px;*/
     background-color: #F0F0F0;
     color: #969696;
@@ -25,6 +25,7 @@ body {
 section {
     color: #606060;
     padding: 20px;
+    width: 945px;
 
     /*border-style: solid;
     border-width:1px;
