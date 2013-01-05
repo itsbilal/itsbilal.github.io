@@ -118,3 +118,11 @@ nav {
     padding:10px;
     float:right;
 }
+
+footer {
+    width:915px;
+    font-size: 11px;
+    color:#848484;
+    text-align:center;
+    padding: 15px;
+}
