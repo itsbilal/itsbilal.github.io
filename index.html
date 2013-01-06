@@ -24,7 +24,6 @@
                             
                             $("#main_content").animate({"margin-left": -$("#main_content").outerWidth()},
                                                         500, function(){
-                                    $("#main_content").css({"margin-left": "80%"})
                                     loadpage(link_id.substr(0,link_id.lastIndexOf("_")), true);
                                 });
                             });
@@ -38,6 +37,7 @@
                     hash_fragment = "home"
                 else if (hash_fragment == "blog") {
                     $("#blog_navlink").addClass("bottom-nav-links-current");
+                    $("#spinner-div").show();
                     return;
                 }
                 $("#"+hash_fragment+"_navlink").addClass("bottom-nav-links-current");
@@ -52,8 +52,10 @@
                 $.get(content_filename,function(data){
                         $("#main_content").html(data);
                         $("#spinner-div").hide();
-                        if (bringdivback)
+                        if (bringdivback) {
+                            $("#main_content").css({"margin-left": "80%"})
                             $("#main_content").animate({"margin-left" : 0}, 500);
+                        }
                     });
                 
                 };
@@ -88,12 +90,12 @@
                 <a href="#contact" id="contact_navlink" class="bottom-nav-links">Contact me</a>
 
             </nav>
-            <section id="main_content">
-               Lorem ipsum 
-            </section>
             <div id="spinner-div">
                 <img src="ajax-loader.gif" alt="Spinner" title="Loading..." />
             </div>
+            <section id="main_content">
+               Lorem ipsum 
+            </section>
             <footer>
                 Copyright &copy; 2012-2013 Bilal Akhtar
             </footer>

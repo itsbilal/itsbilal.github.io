@@ -55,7 +55,7 @@ section {
 #spinner-div {
     /*display:none;*/
     text-align:center;
-    padding-bottom:30px;
+    padding: 30px;
 }
 
 nav {
