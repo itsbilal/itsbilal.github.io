@@ -3,8 +3,10 @@ body {
     font-family: Ubuntu, sans-serif;
     color: #606060;
 
-    background-image: url('background.png');
-    background-size:100%
+    /*background-image: url('background.jpg');
+    background-size:100%*/
+
+    background: -webkit-linear-gradient(top, #9F82ED, #4787F5);
 }
 
 #main {
