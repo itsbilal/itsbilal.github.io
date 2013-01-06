@@ -149,6 +149,8 @@ footer {
     padding: 15px;
 }
 
+a img {border: none; }
+
 .mywork-logo {
     float:right;
     display:inline;
