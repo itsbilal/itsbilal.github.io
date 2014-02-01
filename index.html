@@ -33,13 +33,11 @@
                         loadpage("home",false);
                     }
 
-                    $(".bottom-nav-links").click(function(){
+                    $("nav").find("a").click(function(){
                         var link_id = $(this).attr("id");
                             
-                            $("#main_content").animate({"margin-left": -$("#main_content").outerWidth()},
-                                500, function(){
-                                    loadpage(link_id.substr(0,link_id.lastIndexOf("_")), true);
-                            });
+                        loadpage(link_id.substr(0,link_id.lastIndexOf("_")), true);
+                            
                     });
 
                     $("nav").find("li").hover(function(){
@@ -51,36 +49,32 @@
                     });
                 });
             
-            function loadpage(hash_fragment, bringdivback) {
+            function loadpage(hash_fragment, beginning) {
+                // TODO: Fix this function
                 hash_fragment = hash_fragment.toLowerCase();
-                $(".bottom-nav-links").removeClass("bottom-nav-links-current");
+                //$(".bottom-nav-links").removeClass("nav-links-current");
 
-                if (hash_fragment != "mywork" && hash_fragment != "contact" && hash_fragment != "blog")
+                if (hash_fragment != "mywork" && hash_fragment != "contact" && hash_fragment != "skills") {
                     hash_fragment = "home"
-                else if (hash_fragment == "blog") {
-                    $("#blog_navlink").addClass("bottom-nav-links-current");
-                    $("#spinner-div").show();
-                    return;
                 }
-                $("#"+hash_fragment+"_navlink").addClass("bottom-nav-links-current");
+                //$("#"+hash_fragment+"_navlink").addClass("bottom-nav-links-current");
 
                 var content_filename = hash_fragment + ".html";
                 // Load main_content section with html from filename
                 // TODO: Animate this part
-                // $("#main_content").fadeOut('slow');
-
-                // Display spinner
-                $("#spinner-div").show();
-                $.get(content_filename,function(data){
-                        $("#main_content").html(data);
-                        $("#spinner-div").hide();
-                        if (bringdivback) {
-                            $("#main_content").css({"margin-left": "80%"})
-                            $("#main_content").animate({"margin-left" : 0}, 500);
-                        }
+                var whenDone = function(){
+                    $.get(content_filename,function(data){
+                        $("article").html(data);
+                        
+                        $("article").fadeIn();
                     });
-                
                 };
+
+                if (!beginning)
+                    whenDone();
+                else
+                    $("article").fadeOut(400,whenDone);
+            };
         </script>
     </head>
     <body>
@@ -92,37 +86,25 @@
                 <li>
                     <a href="#" id="home_navlink"><img src="assets/icons/Home-1.svg" class="nav-icon" alt="Home" /></a>
                     <div class="nav-tooltip">
-                        Home
+                        HOME
                     </div>
                 </li>
                 <li>
                     <a href="#mywork" id="mywork_navlink"><img src="assets/icons/work-done-1.svg" class="nav-icon" alt="My Work" /></a>
                     <div class="nav-tooltip">
-                        My Work
+                        MY WORK
                     </div>
                 </li>
                 <li>
-                    <a href="#skills" id="skills_navlink"><img src="assets/icons/Skills-1.svg" class="nav-icon" alt="Skills" /></a>
+                    <a href="#skills" id="skills_navlink"><img src="assets/icons/Education-1.svg" class="nav-icon" alt="Skills" /></a>
                     <div class="nav-tooltip">
-                        Skills
-                    </div>
-                </li>
-                <li>
-                    <a href="#education" id="education_navlink"><img src="assets/icons/Education-1.svg" class="nav-icon" alt="Education" /></a>
-                    <div class="nav-tooltip">
-                        Education
-                    </div>
-                </li>
-                <li>
-                    <a href="#press" id="press_navlink"><img src="assets/icons/Press-1.svg" class="nav-icon" alt="Press" /></a>
-                    <div class="nav-tooltip">
-                        Press
+                        SKILLS
                     </div>
                 </li>
                 <li>
                     <a href="#contact" id="contact_navlink"><img src="assets/icons/Contact-1.svg" class="nav-icon" alt="Contact" /></a>
                     <div class="nav-tooltip">
-                        Contact
+                        CONTACT
                     </div>
                 </li>
             </ul>

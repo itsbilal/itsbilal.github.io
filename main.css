@@ -50,6 +50,8 @@ nav li {
 	color: #3fa9f5;
 	background-color: #ffffff;
 	border: 1px solid #3fa9f5;
+	font-size:14px;
+	
 
 	border-radius: 8px;
 	box-shadow: 0 0 2px 0px #3fa9f5;
@@ -62,6 +64,7 @@ nav li {
 article {
 	color: #999999;
 	font-size: 24px;
+	margin-left:300px;
 }
 
 img {
