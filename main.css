@@ -1,128 +1,70 @@
 html {
-    min-height: 100%;
+    min-height: 99%;
+    border-top: 2px solid #3fa9f5;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
-    color: #606060;
-    background-color: #F2F2F2;
+}
+
+header {
+    padding-top: 150px;
+    padding-left: 300px;
+    margin-bottom: 20px;
     
-}
-
-#main {
-    margin:5% auto 10% auto;
-    width:945px;
-    /*padding: 20px;*/
-    background-color: #FFFFFF;
-    color: #969696;
-    overflow:hidden;
-
-    /* Border */
-    box-shadow: 0px 1px 6px #CCCCCC;
-}
-
-#addthis_follow
-{
-float:right;
-width:200px;
-padding-top:40px;
-padding-right:20px;
-}
-
-section {
-    color: #606060;
-    padding: 20px;
-    width: 905px;
-    
-    overflow: hidden;
-
-}
-
-#spinner-div {
-    /*display:none;*/
-    text-align:center;
-    padding: 30px;
-}
-
-#top-half {
-    background-color: #005a7e;
-    color: #ffffff;
+    font-size: 75px;
+    font-weight: 300;
+    color: #4d4d4d;
 }
 
 nav {
-    height: 60px;
-    width: 100%;
-    text-align:center;
-    background-color: rgba(0,0,0,0.4);
+	border-right: 1px solid #3fa9f5;
+
+	/* The bottom three should add up to 300px to match the title */
+	width: 100px;
+	margin-left: 180px;
+	margin-right: 20px;
+	padding: 15px 0;
+
+	float:left;
 }
 
-.bottom-nav-links:link, .bottom-nav-links:visited {
-    display: inline-block;
-    margin: 14px 30px;
-    padding: 5px;
-    width:150px;
-
-    color: #ffffff;
-
-    text-decoration:none;
-    text-align:center;
-}
-
-
-.bottom-nav-links:hover {
-    background-color: rgba(255,255,255,0.2);
-}
-
-/* Either the current page's link, or something selected */
-.bottom-nav-links:active, .bottom-nav-links-current:link, .bottom-nav-links-current:hover, .bottom-nav-links-current:active, .bottom-nav-links-current:visited {
-    background-color: rgba(255,255,255,0.2);
-    box-shadow: inset 0px 0px 7px #3D3D3D;
-
-}
-
-#name {
-    font-size:60px;
-    /*height:100px;*/
-    padding: 60px;
-
-    vertical-align:text-middle;
-    text-align: center;
-    font-weight: 300;
-
-}
-
-#slogan {
-    font-size: 26px;
-    font-weight: 400;
-    padding: 10px 20px;
-    
-}
-
-#gravatar {
-    padding:10px;
-    float:right;
-}
-
-footer {
-    width:915px;
-    font-size: 11px;
-    color:#848484;
-    text-align:center;
-    padding: 15px;
-}
-
-img {border: none; }
-
-a{
-    border: none;
+nav a {
     text-decoration: none;
-    color: #FF5B03;
 }
 
-.mywork-logo {
-    float:right;
-    display:inline;
-    padding: 30px;
-    height:200px;
-    width:200px;
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
+
+nav li {
+	padding: 10px 0;
+	text-align: center;
+}
+
+
+.nav-tooltip {
+	position: relative;
+	color: #3fa9f5;
+	background-color: #ffffff;
+	border: 1px solid #3fa9f5;
+
+	border-radius: 8px;
+	box-shadow: 0 0 2px 0px #3fa9f5;
+	margin: 0 4px;
+
+	display:block;
+	opacity:0;
+}
+
+article {
+	color: #999999;
+	font-size: 24px;
+}
+
+img {
+	border: none;
+}
+

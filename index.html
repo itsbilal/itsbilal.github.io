@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Bilal Akhtar - Software Developer</title>
+        <title>Bilal Akhtar</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="main.css" />
 
@@ -20,7 +20,7 @@
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
 
-        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
 
         <script type="text/javascript">
             // document.onLoad
@@ -29,19 +29,27 @@
                     if (window.location.hash) {
                         var hash = window.location.hash.substring(1);
                         loadpage(hash,false);
-                        } else {
+                    } else {
                         loadpage("home",false);
-                        }
+                    }
 
-                        $(".bottom-nav-links").click(function(){
-                            var link_id = $(this).attr("id");
+                    $(".bottom-nav-links").click(function(){
+                        var link_id = $(this).attr("id");
                             
                             $("#main_content").animate({"margin-left": -$("#main_content").outerWidth()},
-                                                        500, function(){
+                                500, function(){
                                     loadpage(link_id.substr(0,link_id.lastIndexOf("_")), true);
-                                });
                             });
                     });
+
+                    $("nav").find("li").hover(function(){
+                        $(this).find(".nav-tooltip").animate({"opacity":1.0},200);
+                        $(this).find(".nav-icon").animate({"width":72,"height":72,"margin-top":-4,"margin-bottom":-4},200);
+                    },function(){
+                        $(this).find(".nav-tooltip").animate({"opacity":0},200);
+                        $(this).find(".nav-icon").animate({"width":64,"height":64,"margin-top":0, "margin-bottom":0},200);
+                    });
+                });
             
             function loadpage(hash_fragment, bringdivback) {
                 hash_fragment = hash_fragment.toLowerCase();
@@ -76,45 +84,54 @@
         </script>
     </head>
     <body>
-        <div id="main">
-            <!--<img id="gravatar" src="http://www.gravatar.com/avatar/eb877285cd003122ab6de3fdeb4f968c?s=100" alt="" />-->
 
-<!-- AddThis Follow BEGIN 
-<div id="addthis_follow" class="addthis_toolbox addthis_32x32_style addthis_default_style">
-<a class="addthis_button_facebook_follow" addthis:userid="bilalakhtar0"></a>
-<a class="addthis_button_twitter_follow" addthis:userid="bilal_akhtar96"></a>
-<a class="addthis_button_google_follow" addthis:userid="117754537616115960941"></a>
-<a class="addthis_button_instagram_follow" addthis:userid="bilalakhtar"></a>
-<a class="addthis_button_foursquare_follow" addthis:userid="bilal_akhtar96"></a>
-</div>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f82f6583b232e17"></script>
- AddThis Follow END -->            
-            <div id="top-half">
-                <div id="name">
-                    <span id="firstname">Bilal</span>&nbsp;<span id="lastname">Akhtar</span>
-                </div>
-                <!--<div id="slogan">Web &amp; mobile app developer, tech enthusiast and a surfer of the internets</div> -->
-     
-                <nav>
+        <header>Bilal Akhtar</header>
+        <nav>
 
-                    <a href="#" id="home_navlink" class="bottom-nav-links">Home</a>
-                    <a href="#mywork" id="mywork_navlink" class="bottom-nav-links">My work</a>
-                    <a href="http://blog.itsbilal.com/" id="blog_navlink" class="bottom-nav-links">Blog</a>
-                    <a href="#contact" id="contact_navlink" class="bottom-nav-links">Contact me</a>
+            <ul>
+                <li>
+                    <a href="#" id="home_navlink"><img src="assets/icons/Home-1.svg" class="nav-icon" alt="Home" /></a>
+                    <div class="nav-tooltip">
+                        Home
+                    </div>
+                </li>
+                <li>
+                    <a href="#mywork" id="mywork_navlink"><img src="assets/icons/work-done-1.svg" class="nav-icon" alt="My Work" /></a>
+                    <div class="nav-tooltip">
+                        My Work
+                    </div>
+                </li>
+                <li>
+                    <a href="#skills" id="skills_navlink"><img src="assets/icons/Skills-1.svg" class="nav-icon" alt="Skills" /></a>
+                    <div class="nav-tooltip">
+                        Skills
+                    </div>
+                </li>
+                <li>
+                    <a href="#education" id="education_navlink"><img src="assets/icons/Education-1.svg" class="nav-icon" alt="Education" /></a>
+                    <div class="nav-tooltip">
+                        Education
+                    </div>
+                </li>
+                <li>
+                    <a href="#press" id="press_navlink"><img src="assets/icons/Press-1.svg" class="nav-icon" alt="Press" /></a>
+                    <div class="nav-tooltip">
+                        Press
+                    </div>
+                </li>
+                <li>
+                    <a href="#contact" id="contact_navlink"><img src="assets/icons/Contact-1.svg" class="nav-icon" alt="Contact" /></a>
+                    <div class="nav-tooltip">
+                        Contact
+                    </div>
+                </li>
+            </ul>
 
-                </nav>
-            </div>
-        
-            <div id="spinner-div">
-                <img src="ajax-loader.gif" alt="Spinner" title="Loading..." />
-            </div>
-            <section id="main_content">
-               Lorem ipsum 
-            </section>
-            <footer>
-                Copyright &copy; 2012-2013 Bilal Akhtar
-            </footer>
-        </div>
+        </nav>    
+
+        <article>
+            Lorem ipsum dolor sit amet.
+        </article>
 <!-- google analytics -->
 <script type="text/javascript">
 
