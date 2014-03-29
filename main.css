@@ -69,6 +69,11 @@ article {
 	width: 750px;
 }
 
+article a:link,a:visited,a:hover {
+	color:#3fa9f5;
+	text-decoration: none;
+}
+
 img {
 	border: none;
 }
