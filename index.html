@@ -1,133 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Bilal Akhtar</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="main.css" />
+	<head>
+		<title>Bilal Akhtar</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
-        <!--[if lte IE 9]>
-        <link rel="stylesheet" href="ie.css" />
-        <script type="text/javascript">
-              var e = ("abbr,article,aside,audio,canvas,datalist,details," +
-              "figure,footer,header,hgroup,mark,menu,meter,nav,output," +
-              "progress,section,time,video").split(',');
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
-              for (var i = 0; i < e.length; i++) {
-                document.createElement(e[i]);
-              }
-        </script>
-        <![endif]-->
+		<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="main2.css" />
 
-        <script type="text/javascript" src="assets/js/jquery.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div id="top-half">
+			<div class="container">
+				<header class="center-block">
+					<img id="head" src="profilepic.jpeg" alt=""><br>
+					<h2>Bilal Akhtar</h2>
+				</header>
 
-        <script type="text/javascript">
-            // document.onLoad
-            $(function(){
-                    // Check doc fragment
-                    if (window.location.hash) {
-                        var hash = window.location.hash.substring(1);
-                        loadpage(hash,false);
-                    } else {
-                        loadpage("home",false);
-                    }
+				<section class="center-block">
+					<p>
+						I'm a software developer and enthusiastic geek interested in entrepreneurship. Currently studying software engineering at the <a href="http://uwaterloo.ca/">University of Waterloo</a>.
+					</p>
+					<p>
+						I'm mainly a web and mobile developer, working on my own side-projects. <a href="https://challengepost.com/itsbilal">I love hackathons!</a> In the past, I've contributed to open-source projects like <a href="http://ubuntu.com/">Ubuntu</a> and <a href="http://debian.org/">Debian</a>. If you have something that may pique my interest, or just want to connect with me, either <a href="mailto:me@itsbilal.com">shoot me an e-mail</a> or use one of the social media links below!
+					</p>
+				</section>
+			</div>
+		</div>
 
-                    $("nav").find("a").click(function(){
-                        var link_id = $(this).attr("id");
-                            
-                        loadpage(link_id.substr(0,link_id.lastIndexOf("_")), true);
-                            
-                    });
+		<nav>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3">
+						<a class="my-btn" href="http://facebook.com/bilalakhtar0">Facebook</a>
+					</div>
+					<div class="col-sm-3">
+						<a class="my-btn" href="http://twitter.com/bilal_akh">Twitter</a>
+					</div>
+					<div class="col-sm-3">
+						<a class="my-btn" href="resume.pdf">Resume</a>
+					</div>
+					<div class="col-sm-3">
+						<a class="my-btn" href="http://github.com/bilalakhtar">Github</a>
+					</div>
+				</div>
+			</div>
+		</nav>
 
-                    $("nav").find("li").hover(function(){
-                        $(this).find(".nav-tooltip").animate({"opacity":1.0},200);
-                        $(this).find(".nav-icon").animate({"width":72,"height":72,"margin-top":-4,"margin-bottom":-4},200);
-                    },function(){
-                        $(this).find(".nav-tooltip").animate({"opacity":0},200);
-                        $(this).find(".nav-icon").animate({"width":64,"height":64,"margin-top":0, "margin-bottom":0},200);
-                    });
-                });
-            
-            function loadpage(hash_fragment, beginning) {
-                // TODO: Fix this function
-                hash_fragment = hash_fragment.toLowerCase();
-                //$(".bottom-nav-links").removeClass("nav-links-current");
+		<!--<div id="projects">
+			<div class="container">
+				<section class="project">
+				Test
+				</section>
+			</div>
+		</div>-->
 
-                if (hash_fragment != "mywork" && hash_fragment != "contact" && hash_fragment != "skills") {
-                    hash_fragment = "home"
-                }
-                //$("#"+hash_fragment+"_navlink").addClass("bottom-nav-links-current");
-
-                var content_filename = hash_fragment + ".html";
-                // Load main_content section with html from filename
-                // TODO: Animate this part
-                var whenDone = function(){
-                    $.get(content_filename,function(data){
-                        $("article").html(data);
-                        
-                        $("article").fadeIn();
-                    });
-                };
-
-                if (!beginning)
-                    whenDone();
-                else
-                    $("article").fadeOut(400,whenDone);
-            };
-        </script>
-    </head>
-    <body>
-
-        <header>Bilal Akhtar</header>
-        <nav>
-
-            <ul>
-                <li>
-                    <a href="#" id="home_navlink"><img src="assets/icons/Home-1.svg" class="nav-icon" alt="Home" /></a>
-                    <div class="nav-tooltip">
-                        HOME
-                    </div>
-                </li>
-                <li>
-                    <a href="#mywork" id="mywork_navlink"><img src="assets/icons/work-done-1.svg" class="nav-icon" alt="My Work" /></a>
-                    <div class="nav-tooltip">
-                        MY WORK
-                    </div>
-                </li>
-                <li>
-                    <a href="#skills" id="skills_navlink"><img src="assets/icons/Education-1.svg" class="nav-icon" alt="Skills" /></a>
-                    <div class="nav-tooltip">
-                        SKILLS
-                    </div>
-                </li>
-                <li>
-                    <a href="#contact" id="contact_navlink"><img src="assets/icons/Contact-1.svg" class="nav-icon" alt="Contact" /></a>
-                    <div class="nav-tooltip">
-                        CONTACT
-                    </div>
-                </li>
-            </ul>
-
-        </nav>    
-
-        <article>
-            Lorem ipsum dolor sit amet.
-        </article>
-<!-- google analytics -->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36248326-1']);
-  _gaq.push(['_setDomainName', 'itsbilal.com']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-    </body>
+		<footer>
+			Copyright (C) 2015 Bilal Akhtar
+		</footer>
+	</body>
 </html>
