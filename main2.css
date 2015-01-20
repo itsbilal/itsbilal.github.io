@@ -36,8 +36,8 @@ header h2 {
 }
 
 #top-half .container {
-	background: rgba(46, 46, 46, 0.3);
-	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.6);
+	/*background: rgba(46, 46, 46, 0.3);
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.6);*/
 }
 
 #top-half {
@@ -46,13 +46,13 @@ header h2 {
 	background-size: cover;
 	background-position: center bottom;
 	background-attachment: fixed;
-	color: #ddd;
+	color: #fff;
 
 	padding-bottom: 15px;
 
 	box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.6);
 
-	text-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+	text-shadow: 0px 0px 5px #000;
 	font-size: 22px;
 
 	font-weight: 300;
@@ -60,7 +60,7 @@ header h2 {
 
 #top-half section a {
 	text-decoration:none;
-	color: #ddd;
+	color: #fff;
 
 	border-bottom: 1px dashed #ddd;
 }
