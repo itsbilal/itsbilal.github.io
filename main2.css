@@ -50,7 +50,7 @@ header h2 {
 
 	padding-bottom: 15px;
 
-	box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.6);
+	/*box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.6);*/
 
 	text-shadow: 0px 0px 5px #000;
 	font-size: 22px;
@@ -77,36 +77,45 @@ header h2 {
 nav {
 	text-align: center;
 	width: 100%;
-	background-color: #333;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("contact_me_photo.jpg");
+	background-size: cover;
+	background-attachment: fixed;
 	color: #eee;
 
 	/*box-shadow: 0px 5px 3px -2px rgba(0,0,0,0.5);*/
 }
 
-nav .container-fluid {
+/*nav .container-fluid {
 	width: 70%;
-}
+}*/
 
-nav a.my-btn {
+nav .my-btn {
 	display: block;
-	padding: 10px 0px;
+	padding: 10px 20px;
 
-	margin: 20px 0px;
+	margin: 20px 40px;
 
 	text-decoration: none;
-	text-align: center;
+	text-align: left;
 
 	background-color: transparent;
-	color: #ddd;
-	border: 2px solid #ddd;
-	border-radius: 30px;
+	color: #ccc;
+	border: 2px solid #ccc;
+	border-radius: 6px;
+
+	font-size: 14pt;
+	font-family: "Helvetica Neue", "Arial", sans-serif;
 
 	transition-property: color border-color;
 	transition-duration: 0.25s;
 
 }
 
-nav a.my-btn:hover {
+nav i.fa {
+	padding-right: 5px;
+}
+
+nav .my-btn:hover {
 	color: #fff;
 	border-color: #fff;
 }
