@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/itsbilal
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://itsbilal.com
+  * I am itsbilal (https://keybase.io/itsbilal) on keybase.
+  * I have a public key ASD4Hd2zVXHw--oRG8PH3Jr4jHYDXRpRMkgbVDmxx18h4go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01207d550fdb9c7a21cc5d96ace4eb4302ae1033043441d9ff3bfba477f9ee6d2a900a",
+      "host": "keybase.io",
+      "kid": "0120f81dddb35571f0fbea111bc3c7dc9af88c76035d1a5132481b5439b1c75f21e20a",
+      "uid": "e18b4a292957fc6da200efe1f38f5300",
+      "username": "itsbilal"
+    },
+    "merkle_root": {
+      "ctime": 1546548787,
+      "hash": "4c1ab14803dc70583a7d80670fcf440756a2e9e597f1cd1570446758a7f137ade7dfabe2774dfe0283a7a97926c2c445bf7ff0240a4a767bcdf27144739b40d3",
+      "hash_meta": "f1ce4b47bdb3434db82fb352cd3babd56977636f8405abb2dab34ff392566ec8",
+      "seqno": 4227500
+    },
+    "service": {
+      "entropy": "QNhMZ6nkCEglmgDxKY4FjdDA",
+      "hostname": "itsbilal.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.11.0"
+  },
+  "ctime": 1546548801,
+  "expire_in": 504576000,
+  "prev": "9b090c927dac7841a9de833f4c9a5f485bf9e47352f07acc7d6af3e89b905bfa",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg+B3ds1Vx8PvqERvDx9ya+Ix2A10aUTJIG1Q5scdfIeIKp3BheWxvYWTESpcCEMQgmwkMkn2seEGp3oM/TJpfSFv55HNS8HrMfWrz6JuQW/rEICIJZfZGNEFfqE+Y80PuLWWSiSCUhsbzpb0A8bKa0+QqAgHCo3NpZ8RAEmqUipcuXzBRphkRmtbbDQurQQjJvJMkSeqtMLD8YiYKxLrux/4wrQ4DMlqxYEBfcT4Do8gfDik8pJogWdBLCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKKfngYzXHZ49T3L3UhBc4Km7jsVEgDerYfgLMP/GUSso3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/itsbilal
+
+==================================================================
