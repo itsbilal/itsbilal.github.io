@@ -2,6 +2,7 @@
 layout: post
 title:  "Migrating my blog"
 excerpt_separator: <!-- more -->
+permalink: /blog/2019-03-29-blog-migration.html
 ---
 
 # Migrating my blog to itsbilal.com/blog
