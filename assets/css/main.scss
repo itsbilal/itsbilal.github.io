@@ -1,0 +1,95 @@
+---
+---
+
+@import "main";
+
+$colour-main: #686868;
+$colour-main-lighter: #b4b4b4;
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    color: $colour-main;
+}
+
+p {
+    margin: 20px 0px;
+}
+
+a:link, a:visited, a:active, a:hover {
+    color: $colour-main;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+a:hover {
+    background-color: #d4d4d4;
+}
+
+.back-link {
+    margin: 10px 0px;
+    font-size: 14pt;
+}
+
+header {
+    padding-bottom: 10px;
+    font-size: 60pt;
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 3px solid $colour-main-lighter;
+
+    a:link, a:hover, a:visited, a:active {
+        text-decoration: none;
+        border-bottom: none;
+    }
+}
+
+.blog {
+    max-width: 850px;
+    margin: 0px auto;
+
+    header {
+        margin-top: 100px;
+    }
+
+    .content {
+        margin: 20px 0px;
+    }
+
+    h1 {
+        font-size: 30pt;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 26pt;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 22pt;
+        margin-bottom: 8px;
+    }
+
+    .blog-post {
+        border-bottom: 1px solid $colour-main-lighter;
+        padding: 10px 0px;
+    }
+}
+
+.content {
+    margin: 10px 0px;
+    font-size: 16pt;
+}
+
+.main {
+    max-width: 700px;
+    margin: 0px auto;
+
+    header {
+        margin-top: 200px;
+    }
+}
+
+.nowrap {
+    overflow: hidden;
+}

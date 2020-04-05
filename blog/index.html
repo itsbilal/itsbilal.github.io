@@ -1,0 +1,14 @@
+---
+layout: blog
+title: "Blog"
+---
+
+{% for post in site.posts %}
+    <div class="blog-post">
+        <div class="blog-post-excerpt">
+            {{post.excerpt}}
+
+            <a href="{{ post.url }}">Read more &#xBB;</a>
+        </div>
+    </div>
+{% endfor %}

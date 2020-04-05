@@ -1,3 +1,5 @@
 *.swp
 *.sublime*
 .DS_Store
+.jekyll-cache
+_site
