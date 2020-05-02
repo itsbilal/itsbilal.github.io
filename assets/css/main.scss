@@ -3,11 +3,12 @@
 
 @import "main";
 
-$colour-main: #686868;
-$colour-main-lighter: #b4b4b4;
+$colour-main: #383838;
+$colour-main-lighter: #585858;
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-family: 'Arvo', serif;
     color: $colour-main;
 }
 
@@ -33,7 +34,6 @@ a:hover {
 header {
     padding-bottom: 10px;
     font-size: 60pt;
-    font-weight: bold;
     width: 100%;
     border-bottom: 3px solid $colour-main-lighter;
 
@@ -73,6 +73,10 @@ header {
     .blog-post {
         border-bottom: 1px solid $colour-main-lighter;
         padding: 10px 0px;
+    }
+
+    .published {
+        font-size: 10pt;
     }
 }
 
