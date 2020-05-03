@@ -3,6 +3,8 @@ layout: default
 title: "About me"
 ---
 
+<img src="/assets/images/me.jpg" alt="" class="my-pic">
+
 I’m Bilal Akhtar, a software developer by profession, and a human in general. There’s a lot to learn from the world, and I want to keep my impact on it positive.
 
 I like writing about things I experience and learn, and sometimes I’ll polish it up into a blog post. I also read non-fiction, bike, write emails to local politicians, and spend hours staring at impressionist art every once in a while.
