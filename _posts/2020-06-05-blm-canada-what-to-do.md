@@ -26,8 +26,8 @@ and neither does single payer healthcare or a less broken immigration system.
 
 <!-- more -->
 
-It has also been extremely disappointing seeing the media here choose to focus on asking
-political figures a binary "is Canada racist? yes/no" question, as opposed to having
+It has also been extremely disappointing seeing the media here focus on asking
+a binary "is Canada racist? yes/no" question, as opposed to having
 a nuanced conversation about racism.
 Whether it's a National Post op-ed or [the premier of the largest province](https://www.cbc.ca/news/canada/toronto/ont-ford-racism-1.5595647), the discussion has yet to move
 beyond that simple question [with an obvious answer](https://www.ctvnews.ca/canada/five-charts-that-show-what-systemic-racism-looks-like-in-canada-1.4970352),
@@ -177,7 +177,9 @@ Your local Black Lives Matter (or similar) group would be organizing protests; f
 by going!
 
 Here's [a list of Canadian charities fighting racism](https://fashionmagazine.com/culture/black-community-organizations-canada-donate/).
-We all have our own differences in abilities to donate more or less, but the intent is appreciated. I'll also match the first $500 (CAD) in new
+We all have our own differences in abilities to donate more or less, but the intent is appreciated.
+
+I'll also match the first $500 (CAD) in new
 donations to any of the above Canadian charities or similar US ones, or bail/justice funds. Just send me your receipts [by email](mailto:me@itsbilal.com) or [Twitter DM](https://twitter.com/bilal_akh).
 If you're looking for a list of
 US funds to donate to, the Obama foundation [has linked a couple of those here](https://www.obama.org/anguish-and-action/).
