@@ -5,8 +5,6 @@ excerpt_separator: <!-- more -->
 permalink: /blog/2019-03-29-blog-migration.html
 ---
 
-# Migrating my blog to itsbilal.com/blog
-
 I used to blog on [Medium](https://medium.com/@itsbilal), and going forward I'll
 be blogging here instead, because [Jekyll](https://jekyllrb.com/) is cool.
 

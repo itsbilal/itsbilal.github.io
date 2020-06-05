@@ -4,7 +4,7 @@
 @import "main";
 
 $colour-main: #383838;
-$colour-main-lighter: #585858;
+$colour-main-lighter: #888888;
 
 body {
     // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
@@ -51,6 +51,7 @@ header {
 .blog {
     max-width: 850px;
     margin: 0px auto;
+    line-height: 1.75;
 
     header {
         margin-top: 100px;
@@ -75,13 +76,51 @@ header {
         margin-bottom: 8px;
     }
 
+    .blog-post, .blog-post-excerpt {
+        border-bottom: 2px solid $colour-main-lighter;
+    }
+
     .blog-post {
-        border-bottom: 1px solid $colour-main-lighter;
         padding: 10px 0px;
+    }
+
+    .blog-post-title {
+        font-size: 28pt;
+    }
+
+    .blog-post-excerpt {
+        padding: 20px 0px;
+        .blog-post-title {
+            padding: 10px 0px;
+        }
     }
 
     .published {
         font-size: 10pt;
+    }
+    
+    .post-image {
+        img {
+            max-width: 80%;
+        }
+        .image-caption {
+            font-size: 10pt;
+            color: $colour-main-lighter
+        }
+    }
+
+    h1,h2 {
+        margin-top: 55px;
+    }
+    h3,h4,h5 {
+        margin-top: 30px;
+    }
+
+    blockquote {
+        border-left: 4px solid $colour-main-lighter;
+        padding-left: 20px;
+        color: $colour-main-lighter;
+        margin: 40px 0px;
     }
 }
 
