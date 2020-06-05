@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Stop asking \"Is Canada racist?\". Here's what we can fix instead."
+title:  "Stop asking 'Is Canada racist?'. Here's what we can fix instead."
 excerpt_separator: <!-- more -->
 permalink: /blog/2020-06-05-blm-canada-what-to-do.html
+image: /assets/images/posts/regis_toronto_protest.jpeg
 date: 2020-06-05T21:40:00Z
 ---
 
