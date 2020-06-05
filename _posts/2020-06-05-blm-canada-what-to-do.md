@@ -3,6 +3,7 @@ layout: post
 title:  "Stop asking \"Is Canada racist?\". Here's what we can fix instead."
 excerpt_separator: <!-- more -->
 permalink: /blog/2020-06-05-blm-canada-what-to-do.html
+date: 2020-06-05T21:40:00Z
 ---
 
 The two weeks since the death of George Floyd have been
