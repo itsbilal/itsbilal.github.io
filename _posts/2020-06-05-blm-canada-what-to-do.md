@@ -182,7 +182,8 @@ Here's [a list of Canadian charities fighting racism](https://fashionmagazine.co
 We all have our own differences in abilities to donate more or less, but the intent is appreciated.
 
 I'll also match the first $500 (CAD) in new
-donations to any of the above Canadian charities or similar US ones, or bail/justice funds. Just send me your receipts [by email](mailto:me@itsbilal.com) or [Twitter DM](https://twitter.com/bilal_akh).
+donations to any of the above Canadian charities or similar US ones, or bail/justice funds. (Update: I just reached my cap - really
+appreciate the interest and thanks for donating!) Just send me your receipts [by email](mailto:me@itsbilal.com) or [Twitter DM](https://twitter.com/bilal_akh).
 If you're looking for a list of
 US funds to donate to, the Obama foundation [has linked a couple of those here](https://www.obama.org/anguish-and-action/).
 
